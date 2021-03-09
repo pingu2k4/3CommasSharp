@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyVersion>1.0.0.49</AssemblyVersion>
+    <FileVersion>1.0.0.49</FileVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Refit" Version="6.0.24" />
+    <PackageReference Include="Refit.Newtonsoft.Json" Version="6.0.24" />
+  </ItemGroup>
+
+</Project>

@@ -10,10 +10,10 @@ namespace XCommasSharp.Models
     public class SmartTrade
     {
         [JsonProperty("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         [JsonProperty("version")]
-        public long Version { get; set; }
+        public int Version { get; set; }
 
         [JsonProperty("account")]
         public Account Account { get; set; }

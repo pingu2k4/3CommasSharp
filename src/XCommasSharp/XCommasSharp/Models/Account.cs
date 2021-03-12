@@ -92,7 +92,7 @@ namespace XCommasSharp.Models
         public List<string> SupportedMarketTypes { get; set; }
 
         [JsonProperty("api_key")]
-        public int ApiKey { get; set; }
+        public string ApiKey { get; set; }
 
         [JsonProperty("name")]
         public string Name { get; set; }

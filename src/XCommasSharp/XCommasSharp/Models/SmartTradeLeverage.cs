@@ -24,8 +24,8 @@ namespace XCommasSharp.Models
 
         /// <summary>
         /// Value of custom leverage
-        /// Required only if type is Custom?
         /// </summary>
-        public int? Value { get; set; }
+        [JsonProperty("value")]
+        public decimal? Value { get; set; }
     }
 }

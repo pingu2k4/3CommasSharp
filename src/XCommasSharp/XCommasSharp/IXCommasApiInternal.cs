@@ -36,5 +36,17 @@ namespace XCommasSharp
 
         [Get("/v2/smart_trades/{id}/trades")]
         Task<ApiResponse<List<Trade>>> GetSmartTradeTrades([AliasAs("id")] int smartTradeId);
+
+        [Get("/ver1/bots")]
+        Task<ApiResponse<List<Bot>>> GetBots(GetBotsRequest request);
+
+        [Post("/ver1/bots/{id}/start_new_deal")]
+        Task<ApiResponse<Deal>> StartDeal([AliasAs("id")] int id, [Body] StartDealRequest request);
+
+        [Get("/ver1/deals/{id}/show")]
+        Task<ApiResponse<Deal>> GetDeal([AliasAs("id")] int id);
+
+        [Post("/v2/smart_trades/{id}/close_by_market")]
+        Task<ApiResponse<SmartTrade>> PanicSellSmartTrade([AliasAs("id")] int smartTradeId);
     }
 }

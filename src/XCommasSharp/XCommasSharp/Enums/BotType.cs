@@ -10,13 +10,13 @@ using System.Threading.Tasks;
 namespace XCommasSharp.Enums
 {
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum LeverageType
+    public enum BotType
     {
-        [EnumMember(Value = "custom")]
-        Isolated,
-        [EnumMember(Value = "cross")]
-        Cross,
-        [EnumMember(Value = "not_specified")]
-        NotSpecified
+        [EnumMember(Value = "Bot::MultiBot")]
+        Multi,
+        [EnumMember(Value = "Bot::SingleBot")]
+        Single,
+        [EnumMember(Value = "Bot::SwitchBot")]
+        Switch
     }
 }

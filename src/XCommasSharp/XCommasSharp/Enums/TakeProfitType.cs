@@ -10,13 +10,11 @@ using System.Threading.Tasks;
 namespace XCommasSharp.Enums
 {
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum LeverageType
+    public enum TakeProfitType
     {
-        [EnumMember(Value = "custom")]
-        Isolated,
-        [EnumMember(Value = "cross")]
-        Cross,
-        [EnumMember(Value = "not_specified")]
-        NotSpecified
+        [EnumMember(Value = "base")]
+        Base,
+        [EnumMember(Value = "total")]
+        Total
     }
 }

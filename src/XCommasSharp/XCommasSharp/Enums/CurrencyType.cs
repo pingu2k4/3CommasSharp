@@ -10,13 +10,15 @@ using System.Threading.Tasks;
 namespace XCommasSharp.Enums
 {
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum LeverageType
+    public enum CurrencyType
     {
-        [EnumMember(Value = "custom")]
-        Isolated,
-        [EnumMember(Value = "cross")]
-        Cross,
-        [EnumMember(Value = "not_specified")]
-        NotSpecified
+        [EnumMember(Value = "quote_currency")]
+        Quote,
+        [EnumMember(Value = "base_currency")]
+        Base,
+        [EnumMember(Value = "percent")]
+        Percent,
+        [EnumMember(Value = "xbt")]
+        Xbt
     }
 }

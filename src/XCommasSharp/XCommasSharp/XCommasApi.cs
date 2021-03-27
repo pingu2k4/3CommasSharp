@@ -74,5 +74,25 @@ namespace XCommasSharp
         {
             return await _api.GetSmartTradeTrades(smartTradeId);
         }
+
+        public async Task<ApiResponse<List<Bot>>> GetBotsAsync(GetBotsRequest request)
+        {
+            return await _api.GetBots(request);
+        }
+
+        public async Task<ApiResponse<Deal>> StartDealAsync(StartDealRequest request)
+        {
+            return await _api.StartDeal(request.BotId, request);
+        }
+
+        public async Task<ApiResponse<Deal>> GetDealAsync(int id)
+        {
+            return await _api.GetDeal(id);
+        }
+
+        public async Task<ApiResponse<SmartTrade>> PanicSellSmartTradeAsync(int id)
+        {
+            return await _api.PanicSellSmartTrade(id);
+        }
     }
 }

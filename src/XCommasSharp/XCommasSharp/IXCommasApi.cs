@@ -19,5 +19,9 @@ namespace XCommasSharp
         Task<ApiResponse<SmartTrade>> GetSmartTradeAsync(int smartTradeId);
         Task<ApiResponse<SmartTrade>> CancelSmartTradeAsync(int smartTradeId);
         Task<ApiResponse<List<Trade>>> GetSmartTradeTradesAsync(int smartTradeId);
+        Task<ApiResponse<List<Bot>>> GetBotsAsync(GetBotsRequest request);
+        Task<ApiResponse<Deal>> StartDealAsync(StartDealRequest request);
+        Task<ApiResponse<Deal>> GetDealAsync(int id);
+        Task<ApiResponse<SmartTrade>> PanicSellSmartTradeAsync(int id);
     }
 }

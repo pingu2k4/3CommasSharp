@@ -35,6 +35,8 @@ namespace XCommasSharp.Enums
         [EnumMember(Value = "failed")]
         Failed,
         [EnumMember(Value = "stop_loss_in_progress")]
-        StopLossInProgress
+        StopLossInProgress,
+        [EnumMember(Value = "stop_loss_finished")]
+        StopLossFinished
     }
 }
